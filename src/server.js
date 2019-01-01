@@ -26,6 +26,6 @@ app.set("view_engine", "hbs");
 
 //TOOD::CREATE a homepage
 
-app.get("/", (request, response) => {
+app.get("/", (req, res) => {
   res.send("Hello");
 })
