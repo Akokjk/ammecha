@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-const {db_link} = require('secerts.js');
+const {db_link} = require('./secerts.js');
 
 mongoose.set('useCreateIndex', true);
 mongoose.Promose = global.Promise;

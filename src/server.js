@@ -4,10 +4,10 @@ const fs = require('fs'); //file system
 const hbs = require('hbs'); //handlebars html templating
 const express = require('express'); //allows to create the web app
 const bodyParser = require("body-parser"); //parse body req's
-const {secert} = require("./secerts.js"); //NOT To BE ADDED TO GITHUB
+const {secert} = require("./secerts"); //NOT To BE ADDED TO GITHUB
 const cookieParser = require('cookie-parser'); //parse cookies
 const _ = require("lodash"); //nice for formating json
-const {mongoose} = require("./database.js"); //overhead for mongodb
+const {mongoose} = require("./database"); //overhead for mongodb
 
 
 //Configuration
