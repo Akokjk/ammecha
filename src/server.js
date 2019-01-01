@@ -13,6 +13,7 @@ const {mongoose} = require("./database"); //overhead for mongodb
 //Configuration
 const app = express(); //create routes
 const server = https.createServer(options, app);
+server.listen(443); //https
 app.use(cookieParser(secert)); // this needs to put into secerts
 app.use(bodyParser.json() );       // to support JSON-encoded bodies
 app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
