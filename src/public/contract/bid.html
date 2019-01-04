@@ -1,0 +1,169 @@
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="{{description}}">
+      <meta name="keywords" content="{{keywords}}">
+      <meta name="author" content="Aaron Barack">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>{{title}}</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Bungee|Ultra|Roboto|Alfa+Slab+One|Kalam|PT+Serif" rel="stylesheet">
+      <style>
+          body{
+
+          }
+          #menu{
+            margin: 0px;
+            padding: 0px;
+          }
+          #content{
+
+          }
+          #logo{
+            height: 50px;
+
+          }
+      </style>
+  </head>
+  <body>
+    <div class="container-fluid" id="menu">
+    	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Ammecha</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/signup">Sign Up</a>
+            </li>
+      	  <li class="nav-item">
+              <a class="nav-link active" href="/contracts">Contracts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contract/create">Create Contract</a>
+            </li>
+      	  <li class="nav-item">
+              <a class="nav-link" href="/influencers/login">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/influencers/">Influencers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/companies/">Companies</a>
+            </li>
+           <li class="nav-item" hidden>
+              <form action="https://ammecha.com/influencers/me/token" method="POST" target="_blank">
+      			<input type="submit" id="submit" value="logoff" >
+      		</form>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div id="content" class="container-fluid" >
+      <br>
+      <div class="card border-dark">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contract</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Bids</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Comments</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body ">
+          <h2>
+            <span class="badge badge-info"> Bids: 3</span>
+            <span class="badge badge-danger">Max Bid: $45</span>
+            <span class="badge badge-success">Min Bid: $30</span>
+            <span class="badge badge-dark">Avg. Bid: $40</span>
+          </h2>
+          <br>
+          <div class="row">
+            <div class="col-6">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">$</span>
+                </div>
+                 <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+              </div>
+              </div>
+              <div class="col-6">
+                <p><a href="#" class="btn btn-danger d-inline float-left">Bid</a></p>
+              </div>
+            </div>
+            <br>
+            <table class="table">
+              <thead>
+                  <tr>
+                    <th scope="col">Influencer</th>
+                    <th scope="col"># of Followers</th>
+                    <th># of Completed Jobs</th>
+                    <th>Bid to Accept %</th>
+                    <th scope="col">Bid</th>
+                  </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"><h3><a class="badge badge-warning" href="#">Aaron</a><h3></th>
+                  <td>5000</td>
+                  <td>500</td>
+                  <td>50%</td>
+                  <td>$45</td>
+                </tr>
+                <tr>
+                  <th scope="row"><h3><a class="badge badge-warning" href="#">Bob</a><h3></th>
+                  <td>1022</td>
+                  <td>40</td>
+                  <td>50%</td>
+                  <td>$45</td>
+                </tr>
+                <tr>
+                  <th scope="row"><h3><a class="badge badge-warning" href="#">Loran</a><h3></th>
+                  <td>5000</td>
+                  <td>500</td>
+                  <td>50%</td>
+                  <td>$30</td>
+                </tr>
+              </tbody>
+          </table>
+        </div>
+      </div>
+      <br>
+      <a href="#" class="badge badge-primary " stlye="">By: Test-Cola &#x2605;&#x2605;&#x2605;&#x2605;&#x2605;(45,672)</a>
+      <p class="d-inline float-right">Created on 12/31/2018. Views: 4232</p>
+      <br>
+    </div>
+    <br>
+    <br>
+  	<div class="container-fluid fixed-bottom" id="foot">
+  			<div class="row">
+
+  				<div class="col-6">
+            <p >All rights reserved &copy; Ammecha LLC 2018.</p>
+
+  				</div>
+  				<div class="col-6">
+            	<p >Sitemap | Home | Sign Up | About Us | Contact Us | Contracts</p>
+  				</div>
+  			</div>
+
+
+  		</div>
+  </body>
+</html>

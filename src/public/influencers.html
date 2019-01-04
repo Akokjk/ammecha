@@ -1,0 +1,165 @@
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="{{description}}">
+      <meta name="keywords" content="{{keywords}}">
+      <meta name="author" content="Aaron Barack">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>{{title}}</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Bungee|Ultra|Roboto|Alfa+Slab+One|Kalam|PT+Serif" rel="stylesheet">
+      <style>
+          body{
+
+          }
+          #menu{
+            margin: 0px;
+            padding: 0px;
+          }
+          #content{
+            height: 90vh;
+
+          }
+          #logo{
+            height: 50px;
+
+          }
+      </style>
+  </head>
+  <body>
+    <div class="container-fluid" id="menu">
+    	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Ammecha</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/signup">Sign Up</a>
+            </li>
+      	  <li class="nav-item">
+              <a class="nav-link" href="/contracts">Contracts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contract/create">Create Contract</a>
+            </li>
+      	  <li class="nav-item">
+              <a class="nav-link" href="/influencers/login">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="/influencers/">Influencers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/companies/">Companies</a>
+            </li>
+           <li class="nav-item" hidden>
+              <form action="https://ammecha.com/influencers/me/token" method="POST" target="_blank">
+      			<input type="submit" id="submit" value="logoff" >
+      		</form>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div id="content" class="container-fluid">
+      <br>
+      <div class="input-group mb-3 float-right" style="width: 400px">
+        <input type="text" class="form-control" placeholder="Search Influencers" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button">Search</button>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div class="row">
+      <div class="col-3">
+      <div class="speci d-block" style="margin-left: 10px; width: 200px; margin-bottom: 0px">
+        <p class="text-center" style="font-weight: bold;">Sort</p>
+        <p>Platforms:
+          <div class="form-check form-check-inline" style="padding-right:0px; padding-bottom: 3px">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <label class="form-check-label" for="inlineCheckbox1"><img src="../assets/youtube.png" style="width: 20px; height: 20px"></label>
+          </div>
+          <div class="form-check form-check-inline" style="padding-bottom: 3px">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+            <label class="form-check-label" for="inlineCheckbox2"><img src="../assets/instagram.png" style="width: 20px; height: 20px"></label>
+          </div>
+          <div class="form-check form-check-inline"style="padding-bottom: 3px">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+            <label class="form-check-label" for="inlineCheckbox3"><img src="../assets/twitter.png" style="width: 20px; height: 20px"></label>
+          </div>
+        </p>
+        <p>Viewer Base:
+          <select class="form-control form-control-sm">
+            <option> </option>
+            <option>+100</option>
+            <option>+1000</option>
+            <option>+10000</option>
+            <option>+100K</option>
+            <option>+500K</option>
+            <option>+1 M</option>
+          </select>
+        </p>
+      </div>
+    </div>
+      <div class="col-9" style="overflow:auto;">
+        <div class="card border-dark d-inline-block " style="width: 200px; margin: 10px">
+          <img class="card-img-top" style="width: 190px; height: 190px" src="../assets/goofy.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title text-center">Goofy
+              <img src="../assets/instagram.png" style="width: 30px; height: 30px">
+              <img src="../assets/youtube.png" style="width: 30px; height: 30px">
+            </h5>
+            <p class="card-text text-center">
+              Completed Jobs: 45<br>
+              99% Job Satisfaction<br>
+              Viewer Base: 10M+
+            </p>
+          </div>
+      </div>
+      <div class="card border-dark d-inline-block" style="width: 200px; margin: 10px">
+        <img class="card-img-top" style="width: 190px; height: 190px; z-index: -1;" src="../assets/profile.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title text-center">Aaron
+            <img src="../assets/instagram.png" style="width: 30px; height: 30px">
+          </h5>
+          <p class="card-text text-center">
+            Completed Jobs: 500<br>
+            80% Job Satisfaction<br>
+            Viewer Base:
+          </p>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+    <br>
+  	<div class="container-fluid" id="foot" hidden>
+  			<div class="row">
+
+  				<div class="col-4">
+
+
+  				</div>
+  				<div class="col-4">
+
+  				</div>
+
+  			</div>
+  			<p style="float: left;  ">All rights reserved &copy; Ammecha LLC 2018. Website created by <span><a href="https://aaronbarack.com/" style="">Aaron Barack</a></span></p>
+  			<p style="float: right;">Sitemap | Home | Sign Up | About Us | Contact Us | Contracts</p>
+  		</div>
+  </body>
+</html>

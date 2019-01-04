@@ -29,3 +29,9 @@ app.set("view_engine", "hbs");
 app.get("/", (req, res) => {
   res.send("Hello");
 })
+
+
+//build routes for contracts
+//figure out socket io to update the contracts in real timeout
+//that would be the comments, updating notifcations, and message boards
+//

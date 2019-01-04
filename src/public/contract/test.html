@@ -1,0 +1,119 @@
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="{{description}}">
+      <meta name="keywords" content="{{keywords}}">
+      <meta name="author" content="Aaron Barack">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>{{title}}</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Bungee|Ultra|Roboto|Alfa+Slab+One|Kalam|PT+Serif" rel="stylesheet">
+      <style>
+          body{
+
+          }
+          #menu{
+            margin: 0px;
+            padding: 0px;
+          }
+          #content{
+            height: 50vh;
+
+          }
+          #logo{
+            height: 50px;
+
+          }
+      </style>
+  </head>
+  <body>
+    <div class="container-fluid" id="menu">
+    	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Ammecha</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/signup">Sign Up</a>
+            </li>
+      	  <li class="nav-item">
+              <a class="nav-link active" href="/contracts">Contracts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contract/create">Create Contract</a>
+            </li>
+      	  <li class="nav-item">
+              <a class="nav-link" href="/influencers/login">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/influencers/">Influencers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/companies/">Companies</a>
+            </li>
+           <li class="nav-item" hidden>
+              <form action="https://ammecha.com/influencers/me/token" method="POST" target="_blank">
+      			<input type="submit" id="submit" value="logoff" >
+      		</form>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div id="content" class="container-fluid" >
+      <br>
+      <div class="card border-dark">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="C:/Users/Aaron/Documents/websites/ammecha/ammecha/src/public/contract/test.html">Contract</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="C:/Users/Aaron/Documents/websites/ammecha/ammecha/src/public/contract/bid.html">Bids</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="C:/Users/Aaron/Documents/websites/ammecha/ammecha/src/public/contract/comment.html">Comments</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body ">
+          <h3 class="card-title text-center d-inline float-left">We are looking for influencers. <span class="badge badge-secondary">Until 1/4/2019</span> <img src="../../assets/instagram.png" style="width: 30px; height: 30px"></h3>
+          <p><a href="#" class="btn btn-danger btn-lg d-inline float-right">Bid</a></p>
+          <br><br>
+                <ul class="list-group  d-block">
+                  <li class="list-group-item"><h4>Description:</h4>
+                    <p>Want to work with us? Help spread the joy of Coca-Cola.</p></li>
+                  <li class="list-group-item"><h4>Requirements:</h4>
+                    <ul>
+                      <li>Have at least +1000 Followers</li>
+                      <li>Show a Coca-Cola product in your post.</li>
+                      <li>#Coco-Cola in post description.</li>
+                    </ul>
+                  </li>
+                </ul>
+        </div>
+      </div>
+      <br>
+      <a href="#" class="badge badge-primary d-inline" stlye="">By: Test-Cola &#x2605;&#x2605;&#x2605;&#x2605;&#x2605;(45,672)</a>
+      <p class="d-inline float-right">Created on 12/31/2018. Views: 4232</p>
+      <br>
+      <br>
+    </div>
+    <br>
+    <br>
+<br>
+  			<p class="d-inline  float-left" >All rights reserved &copy; Ammecha LLC 2018.</p>
+  			<p class="d-inline float-right ">Sitemap | Home | Sign Up | About Us | Contact Us | Contracts</p>
+  </body>
+</html>

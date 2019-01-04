@@ -1,0 +1,164 @@
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="description" content="{{description}}">
+      <meta name="keywords" content="{{keywords}}">
+      <meta name="author" content="Aaron Barack">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>{{title}}</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Bungee|Ultra|Roboto|Alfa+Slab+One|Kalam|PT+Serif" rel="stylesheet">
+      <style>
+          body{
+
+          }
+          #menu{
+            margin: 0px;
+            padding: 0px;
+          }
+          #content{
+            height: 90vh;
+
+          }
+          #logo{
+            height: 50px;
+
+          }
+      </style>
+  </head>
+  <body>
+    <div class="container-fluid" id="menu">
+    	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Ammecha</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/signup">Sign Up</a>
+            </li>
+      	  <li class="nav-item">
+              <a class="nav-link active" href="/contracts">Contracts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contract/create">Create Contract</a>
+            </li>
+      	  <li class="nav-item">
+              <a class="nav-link" href="/influencers/login">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/influencers/">Influencers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/companies/">Companies</a>
+            </li>
+           <li class="nav-item" hidden>
+              <form action="https://ammecha.com/influencers/me/token" method="POST" target="_blank">
+      			<input type="submit" id="submit" value="logoff" >
+      		</form>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div id="content" class="container-fluid" >
+      <br>
+      <div class="row">
+        <div class="col-3" style="" id="input">
+          <div class ="row">
+            <div class ="col-12" stlye="background-color: green;">
+              <p style="font-weight: bold; font-size: 120%; ">Platforms:</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12" style="background-color: white;">
+              <div class="form-check form-check-inline" style="padding-right:0px">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1"><img src="../assets/youtube.png" style="width: 20px; height: 20px"></label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2"><img src="../assets/instagram.png" style="width: 20px; height: 20px"></label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                <label class="form-check-label" for="inlineCheckbox3"><img src="../assets/twitter.png" style="width: 20px; height: 20px"></label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="C:/Users/Aaron/Documents/websites/ammecha/ammecha/src/public/contract/test.html">
+        <div class="col-8" style=" height: 100px;">
+          <div class="row">
+            <div class="col-2" style=" height: 100px; margin: 0px; padding: 0px">
+              <img src="../assets/coke.jpg" style="background-color: yellow; width: 100px;  float: right; margin: 0px; padding: 0px" class="rounded-left">
+            </div>
+            <div class="col-10 rounded-right border border-dark" style=" height: 100px; background-color: white; z-index: -1; float: right; padding-left:0px; margin-left: 0px ">
+              <div class="row" style="height: 22px; margin: 0px; padding: 0px; " >
+                <div class="col-10">
+                    <p style= "color: black; padding-left: 10px; font-weight: bold; margin-bottom: 1px">We are looking for influencers.</p>
+                </div>
+                <div class="col-2">
+                  <p style= "color: red; padding-left: 10px; font-weight: bold; margin-bottom: 1px; text-justify: right; width: 100px">200 Bids</p>
+                </div>
+              </div>
+              <div class="row" style="height: 22px; margin: 0px; padding: 0px; " >
+                <div class="col-12">
+                  <p style="padding-left: 10px; margin-bottom: 1px; color: grey">Do you love Coca-Cola products? Then tell your followers about us we'll pay you...</p>
+                </div>
+              </div>
+              <div class="row" style="height: 22px; margin: 0px; padding: 0px;" >
+                <div class="col-12">
+                  <p style= "color: black; padding-left: 10px; font-weight: bold; margin-bottom: 1px">50 Contracts Available</p>
+                </div>
+              </div>
+              <div class="row" style="height: 22px; margin: 0px; padding: 0px; float: left:" >
+                <div class="col-5">
+                  <p style="padding-left: 10px; margin-bottom: 1px; color: blue; width: 300px; margin-left: 0px">By: Test-Cola &#x2605;&#x2605;&#x2605;&#x2605;&#x2605;(45,672)</p>
+                </div>
+                <div class="col-3" style="">
+                  <p style="margin-right: 0px; margin-bottom: 1px; color: black; font-weight: bold; text-justify: left; width: 200px">Req: 1000+ Followers</p>
+                </div>
+                <div class="col-4">
+                  <p style="padding-left: 10px; margin-bottom: 1px; color: black; text-justify: left; font-weight: bold"> Ends: 1/2/2019</p>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div
+
+        </div>
+        </a>
+
+      </div>
+    </div>
+    <br>
+  	<div class="container-fluid" id="foot" hidden>
+  			<div class="row">
+
+  				<div class="col-4">
+
+
+  				</div>
+  				<div class="col-4">
+
+  				</div>
+
+  			</div>
+  			<p style="float: left;  ">All rights reserved &copy; Ammecha LLC 2018. Website created by <span><a href="https://aaronbarack.com/" style="">Aaron Barack</a></span></p>
+  			<p style="float: right;">Sitemap | Home | Sign Up | About Us | Contact Us | Contracts</p>
+  		</div>
+  </body>
+</html>
